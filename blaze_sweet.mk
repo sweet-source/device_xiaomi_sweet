@@ -14,6 +14,13 @@ $(call inherit-product, device/xiaomi/sweet/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
+# Blaze Specific
+BLAZE_BUILD_TYPE := OFFICIAL
+BLAZE_MAINTAINER := ADITYA
+TARGET_SUPPORTS_BLUR := true
+TARGET_BOOT_ANIMATION_RES := 1080
+WITH_GAPPS := true
+
 PRODUCT_NAME := blaze_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Xiaomi
