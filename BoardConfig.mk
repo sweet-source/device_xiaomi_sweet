@@ -29,7 +29,7 @@ BUILD_BROKEN_USES_SOONG_PYTHON2_MODULES := true
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG += vendor/sweet_defconfig
+TARGET_KERNEL_CONFIG += vendor/sweet.config
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
