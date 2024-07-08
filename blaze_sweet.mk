@@ -16,7 +16,7 @@ $(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
 # Blaze Specific
 BLAZE_BUILD_TYPE := OFFICIAL
-BLAZE_MAINTAINER := ADITYA
+BLAZE_MAINTAINER := ADITYA&Kamlesh
 TARGET_SUPPORTS_BLUR := true
 TARGET_BOOT_ANIMATION_RES := 1080
 WITH_GAPPS := true
