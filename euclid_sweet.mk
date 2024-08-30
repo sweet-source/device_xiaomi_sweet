@@ -11,18 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from sweet device
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
+# Inherit some common euclid stuff.
+$(call inherit-product, vendor/euclid/config/common_full_phone.mk)
 
-# Blaze Specific
-BLAZE_BUILD_TYPE := OFFICIAL
-BLAZE_MAINTAINER := ADITYA&Kamlesh
-TARGET_SUPPORTS_BLUR := true
-TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GAPPS := true
-TARGET_INCLUDE_PIXEL_LAUNCHER := true 
 
-PRODUCT_NAME := blaze_sweet
+PRODUCT_NAME := euclid_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 10 Pro
@@ -33,3 +26,14 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 BUILD_FINGERPRINT := google/husky/husky:14/AP2A.240705.005/11942872:user/release-keys
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="husky-user 14 AP2A.240705.005 11942872 release-keys"
+
+#Euclid official stuff
+TARGET_BOOT_ANIMATION_RES := 1080
+#Maintainer
+EUCLID_BUILD_TYPE := OFFICIAL
+EUCLID_MAINTAINER := kamlesh-patel
+
+#Gapps
+EUCLID_GAPPS := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+
