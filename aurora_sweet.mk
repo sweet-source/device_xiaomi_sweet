@@ -12,10 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
 # Inherit some common euclid stuff.
-$(call inherit-product, vendor/euclid/config/common_full_phone.mk)
+$(call inherit-product, vendor/aurora/config/common_full_phone.mk)
 
 
-PRODUCT_NAME := euclid_sweet
+PRODUCT_NAME := aurora_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 10 Pro
@@ -30,10 +30,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 #Euclid official stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 #Maintainer
-EUCLID_BUILD_TYPE := OFFICIAL
-EUCLID_MAINTAINER := kamlesh-patel
+AURORA_BUILD_TYPE := OFFICIAL
 
 #Gapps
-EUCLID_GAPPS := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-
+WITH_GMS := true
+TARGET_INCLUDE_PIXEL_LAUNCHER := true

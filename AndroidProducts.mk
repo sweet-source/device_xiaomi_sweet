@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/euclid_sweet.mk
+    $(LOCAL_DIR)/aurora_sweet.mk
